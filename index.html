@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="./script.js" defer></script>
+    <title>Examen - Intento 3</title>
+</head>
+<body>
+    <header>
+        <div id="header_hug">
+            <div>
+                <img src="./Imágenes/logo.png" alt="logo">
+                <strong>Hug Express</strong>
+            </div>
+            <div id="barra_buscar">
+                <input type="search" id="barrita" placeholder="Buscar Personas">
+                <button type="submit" id="btn_buscar">buscar</button>
+            </div>
+            <div>
+                <a href="#" onclick="como_funciona(this)">¿Cómo funciona?</a>
+            </div>
+        </div>
+        <div id="header_house">
+            <img src="./Imágenes/home.png" alt="home">
+            <p><strong>> Amigos > Enviar Abrazos</strong></p>
+        </div>
+    </header>
+    <main>
+        <div id="main_personas">
+            <div id="persona1">
+                <img src="./Imágenes/horacio.png" class="imagenes" alt="horacio">
+                <div class="personas_info">
+                    <h2>Horacio Olivera</h2>
+                    <p>"Soy Horacio, mi libro preferido es Rayuela de Julio Cortazar".</p>
+                    <p>Amigos desde 24/Julio/2024</p>
+                </div>
+                <div class="btn_personas">
+                    <p id="horacio_abrazo">3 abrazo (s)</p>
+                    <button class="btn_enviar" onclick="contador1()">Enviar Abrazo</button>
+                </div>
+            </div>
+            <div id="persona2">
+                <img src="./Imágenes/aureliano.png" class="imagenes" alt="aureliano">
+                <div class="personas_info">
+                    <h2>Aureliano Buendia</h2>
+                    <p>"Vivo en Macondo con varias generaciones de mi familia".</p>
+                    <p>Amigos desde 18/Agosto/2024</p>
+                </div>
+                <div class="btn_personas">
+                    <p id="aureliano_abrazo">2 abrazo (s)</p>
+                    <button class="btn_enviar" onclick="contador2()">Enviar Abrazo</button>
+                </div>
+            </div>
+            <div id="persona3">
+                <img src="./Imágenes/ricardo.png" class="imagenes" alt="ricardo">
+                <div class="personas_info">
+                    <h2>Ricardo Somocurcio</h2>
+                    <p>"Mi sueño es vivir en Paris y trabajar como traductor".</p>
+                    <p>Amigos desde 10/Agosto/2024</p>
+                </div>
+                <div class="btn_personas">
+                    <p id="ricardo_abrazo">6 abrazo (s)</p>
+                    <button class="btn_enviar" onclick="contador3()">Enviar Abrazo</button>
+                </div>
+            </div>
+        </div>
+        <div id="main_columna">
+            <p>Somos la <strong>primera plataforma</strong> diseñada para enviar <span>abrazos</span> a tus familiares y amigos.</p>
+            <p>La distancia sera mucha pero los abrazos nos unen.</p>
+        </div>
+    </main>
+    <div id="cookies" onclick="eliminar (this)">
+        <img src="./Imágenes/cookies.png" alt="cookies">
+        <span>Hug Express utiliza cookies para optimizar la navegacion y personalizarla segun tus preferencias. Al hacer click en "Aceptar" estas de acuerdo con nuestra <a href="#">politica de privacidad</a></span>
+        <div id="btn_cookies">
+            <button id="btn_aceptar">Aceptar</button>
+        </div>
+    </div>
+</body>
+</html>
